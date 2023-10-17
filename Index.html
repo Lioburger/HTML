@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>HTML Tutorial</title>
+<title>mrp</title>
+<link rel="icon" type="image/iconx" href="https://ibb.co/MsywV2f">
 </head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+<script>
+const x = document.getElementById("demo");
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+<style>
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+
+div {
+  color: auto;
+  t: center;
+  font-family: auto;
+}
+
+body {
+  background-image: url('cat.jpg');
+}
+</style>
+<h1>Welcome to my presentataiton</h1>
+<h2>ypu play like a cat mrp mrp rmoew</h2>
+<p>love soundspace</p>
+<img src="mrow.png" alt="mrow" width="500" height="600">
+<div>
+<a href="https://github.com/krmeet/sound-space-plus">krmeet ss+</a>
+</div>
 </body>
 </html>
